@@ -21,6 +21,10 @@
     box-sizing: border-box;
 }
 
+.btn {
+    cursor: pointer;
+}
+
 body {
     background-color: #fff;
     color: var(--primary-text-color);
@@ -267,9 +271,36 @@ ul {
 
 /*Страница портфолио*/
 .filter-work-type {
-    
+    display: flex;
+    justify-content: center;
+
 }
 
+.work-type {
+    display: flex;
+    margin-bottom: 50px;
+}
+.work-filter:not(:last-child) {
+    margin-right: 8px;
+}
+
+.button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
+    background-color: var(--bg-grey);
+    border: 0 solid var(--bg-grey);
+    border-radius: 4px;
+    width: 125px;
+    height: 38px;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--accent-color);
+    color: var(--c-white);
+}
 .work-list {
     display: flex; 
     flex-wrap: wrap;
@@ -287,6 +318,7 @@ ul {
 .work-item> a {
     text-decoration: none;
     text-align: start;
+    border-bottom: 2px solid var(--bg-grey);
 }
 
 .work-title {
