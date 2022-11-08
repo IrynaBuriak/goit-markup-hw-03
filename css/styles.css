@@ -38,9 +38,10 @@ ul {
 .section{
     padding: 94px 0;
 }
+
 .container {
-    box-sizing: border-box;
     max-width: 1600px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -171,6 +172,7 @@ ul {
     font-size: 14px;
     line-height: 1.1428;   
     text-transform: uppercase;
+    padding-bottom: 10px;
 }
 
 /*projects section*/
@@ -194,18 +196,18 @@ ul {
 .team {
     background-color: var(--bg-grey);
 }
+
 .team-list{
     display: flex;
     justify-content: center;
+    gap: 30px;
+    margin-top:50px;
 }
 
 .team-item {
     display: block;
     box-sizing: border-box;
-}
-
-.team-item:not(:last-child) {
-    margin-right: 30px;
+    text-align: center;
 }
 
 .team-img {
@@ -213,9 +215,6 @@ ul {
 }
 
 .team-desc {
-    display: block;
-    justify-content: center;
-    text-align: center;
     padding: 30px 15px;
     font-weight: 400;
     font-size: 16px;
@@ -257,7 +256,51 @@ ul {
 .footer-contacts-link:not(:last-child) {
     margin-bottom: 9px;;
 }
-
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
+    color: var(--accent-color);
+}
 .map {
     color: var(--c-white);
+}
+
+
+/*Страница портфолио*/
+.filter-work-type {
+    
+}
+
+.work-list {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.work-item> a {
+    text-decoration: none;
+    text-align: start;
+}
+
+.work-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--header-text-color);
+}
+
+.work-type {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
 }
