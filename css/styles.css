@@ -262,6 +262,7 @@ ul {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.1875;
+    background-color: var(--bg-white);
 }
 
 .team-name {
@@ -323,6 +324,7 @@ ul {
 .filter-work-type {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .work-type {
@@ -341,8 +343,7 @@ ul {
     background-color: var(--bg-grey);
     border: 0 solid var(--bg-grey);
     border-radius: 4px;
-    width: 125px;
-    height: 38px;
+    padding: 6px 22px;
 }
 
 .button:hover,
